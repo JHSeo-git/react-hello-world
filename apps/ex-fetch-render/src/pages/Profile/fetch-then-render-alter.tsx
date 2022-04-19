@@ -1,14 +1,12 @@
 import { useEffect, useState } from 'react';
-import { fetchPosts, fetchUser } from '../helpers/utils';
-import { PostT, UserT } from '../helpers/types';
+import { fetchPosts, fetchUser } from '../../helpers/utils';
+import { PostT, UserT } from '../../helpers/types';
 
-function ProfileTimeline() {
-  const [posts, setPosts] = useState<PostT[] | null>(null);
+type ProfileTimelineProps = {
+  posts: PostT[] | null;
+};
 
-  useEffect(() => {
-    fetchPosts<PostT[]>(2000).then(p => setPosts(p));
-  }, []);
-
+function ProfileTimeline({ posts }: ProfileTimelineProps) {
   if (posts === null) {
     return <h2>Loading posts...</h2>;
   }
@@ -23,9 +21,11 @@ function ProfileTimeline() {
 
 function Profile() {
   const [user, setUser] = useState<UserT | null>(null);
+  const [posts, setPosts] = useState<PostT[] | null>(null);
 
   useEffect(() => {
     fetchUser<UserT>(1000).then(u => setUser(u));
+    fetchPosts<PostT[]>(2000).then(p => setPosts(p));
   }, []);
 
   if (user === null) {
@@ -35,7 +35,7 @@ function Profile() {
   return (
     <>
       <h1 style={{ color: 'purple' }}>Name : {user.name}</h1>
-      <ProfileTimeline />
+      <ProfileTimeline posts={posts} />
     </>
   );
 }
