@@ -317,6 +317,12 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@custom/design@*, @custom/design@workspace:packages/design":
+  version: 0.0.0-use.local
+  resolution: "@custom/design@workspace:packages/design"
+  languageName: unknown
+  linkType: soft
+
 "@eslint/eslintrc@npm:^1.2.1":
   version: 1.2.1
   resolution: "@eslint/eslintrc@npm:1.2.1"
@@ -461,7 +467,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:^18.0.1":
+"@types/react-dom@npm:^18.0.0, @types/react-dom@npm:^18.0.1":
   version: 18.0.1
   resolution: "@types/react-dom@npm:18.0.1"
   dependencies:
@@ -470,7 +476,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:^18.0.5":
+"@types/react@npm:*, @types/react@npm:^18.0.0, @types/react@npm:^18.0.5":
   version: 18.0.5
   resolution: "@types/react@npm:18.0.5"
   dependencies:
@@ -1299,6 +1305,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "ex-fetch-render@workspace:apps/ex-fetch-render"
   dependencies:
+    "@custom/design": "*"
     "@types/react": ^18.0.5
     "@types/react-dom": ^18.0.1
     "@vitejs/plugin-react": ^1.3.0
@@ -1306,6 +1313,20 @@ __metadata:
     react: ^18.0.0
     react-dom: ^18.0.0
     react-router-dom: ^6.3.0
+    typescript: ^4.6.3
+    vite: ^2.9.5
+  languageName: unknown
+  linkType: soft
+
+"ex-suspense-render@workspace:apps/ex-suspense-render":
+  version: 0.0.0-use.local
+  resolution: "ex-suspense-render@workspace:apps/ex-suspense-render"
+  dependencies:
+    "@types/react": ^18.0.0
+    "@types/react-dom": ^18.0.0
+    "@vitejs/plugin-react": ^1.3.0
+    react: ^18.0.0
+    react-dom: ^18.0.0
     typescript: ^4.6.3
     vite: ^2.9.5
   languageName: unknown
