@@ -1,5 +1,5 @@
 import { Suspense } from 'react';
-import { suspenseProfileData } from '../../helpers/utils';
+import { suspenseProfileData } from '../../helpers/fetch-data';
 import { PostT, UserT } from '../../helpers/types';
 
 const resource = suspenseProfileData<UserT, PostT[]>();

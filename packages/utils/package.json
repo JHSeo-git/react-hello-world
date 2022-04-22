@@ -1,0 +1,13 @@
+{
+  "name": "@custom/utils",
+  "version": "0.0.0",
+  "exports": {
+    ".": "./index.ts"
+  },
+  "files": [
+    "./index.ts"
+  ],
+  "devDependencies": {
+    "typescript": "^4.6.3"
+  }
+}

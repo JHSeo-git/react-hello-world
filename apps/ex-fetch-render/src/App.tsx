@@ -1,9 +1,9 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
-import FetchOnRender from './pages/Profile/fetch-on-render';
-import FetchThenRender from './pages/Profile/fetch-then-render';
-import FetchThenRenderAlter from './pages/Profile/fetch-then-render-alter';
-import RenderAsYouFetch from './pages/Profile/render-as-you-fetch';
+import FetchOnRender from './pages/profile/fetch-on-render';
+import FetchThenRender from './pages/profile/fetch-then-render';
+import FetchThenRenderAlter from './pages/profile/fetch-then-render-alter';
+import RenderAsYouFetch from './pages/profile/render-as-you-fetch';
 
 function App() {
   return (

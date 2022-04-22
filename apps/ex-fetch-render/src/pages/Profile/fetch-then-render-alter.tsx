@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { fetchPosts, fetchUser } from '../../helpers/utils';
+import { fetchPosts, fetchUser } from '../../helpers/fetch-data';
 import { PostT, UserT } from '../../helpers/types';
 
 type ProfileTimelineProps = {

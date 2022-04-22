@@ -44,7 +44,9 @@ function Header() {
       </nav>
       {subTitle && (
         <p style={{ textAlign: 'center' }}>
-          render: <em style={{ color: 'red' }}>{subTitle}</em>
+          <small>
+            render: <em style={{ color: 'red' }}>{subTitle}</em>
+          </small>
         </p>
       )}
     </header>

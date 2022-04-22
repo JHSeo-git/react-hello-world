@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { fetchProfileData } from '../../helpers/utils';
+import { fetchProfileData } from '../../helpers/fetch-data';
 import { PostT, UserT } from '../../helpers/types';
 
 // 최대한 빨리 fetch 하기

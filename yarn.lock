@@ -323,6 +323,14 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@custom/utils@*, @custom/utils@workspace:packages/utils":
+  version: 0.0.0-use.local
+  resolution: "@custom/utils@workspace:packages/utils"
+  dependencies:
+    typescript: ^4.6.3
+  languageName: unknown
+  linkType: soft
+
 "@eslint/eslintrc@npm:^1.2.1":
   version: 1.2.1
   resolution: "@eslint/eslintrc@npm:1.2.1"
@@ -1306,6 +1314,7 @@ __metadata:
   resolution: "ex-fetch-render@workspace:apps/ex-fetch-render"
   dependencies:
     "@custom/design": "*"
+    "@custom/utils": "*"
     "@types/react": ^18.0.5
     "@types/react-dom": ^18.0.1
     "@vitejs/plugin-react": ^1.3.0
@@ -1322,11 +1331,15 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "ex-suspense-render@workspace:apps/ex-suspense-render"
   dependencies:
+    "@custom/design": "*"
+    "@custom/utils": "*"
     "@types/react": ^18.0.0
     "@types/react-dom": ^18.0.0
     "@vitejs/plugin-react": ^1.3.0
+    prettier: "*"
     react: ^18.0.0
     react-dom: ^18.0.0
+    react-router-dom: ^6.3.0
     typescript: ^4.6.3
     vite: ^2.9.5
   languageName: unknown
